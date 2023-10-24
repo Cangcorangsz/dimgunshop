@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Raleway&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+    <!-- 
+        Font:
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Raleway', sans-serif;
+        font-family: 'Sedgwick Ave Display', cursive;
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dimshop</title>
+    <style>
+        .thing {
+            border: solid 2px #2E4374;
+            width: 50%;
+            text-align: center;
+            padding: 1.01em;
+            line-height: 1.6;
+            border-radius: 25px;
+        }
+
+        .thing img {
+            width: 85%;
+        }
+
+        .display {
+            margin: 5.5em auto;
+            justify-items: center;
+            align-items: center;
+            display: grid;
+            grid-template-areas:
+                "knife1 knife2 knife3"
+                "gun1 gun2 gun3";
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 2em;
+        }
+
+        .knife1 {
+            grid-area: knife1;
+        }
+
+        .knife2 {
+            grid-area: knife2;
+        }
+
+        .knife3 {
+            grid-area: knife3;
+        }
+
+        .gun1 {
+            grid-area: gun1;
+        }
+
+        .gun2 {
+            grid-area: gun2;
+        }
+
+        .gun3 {
+            grid-area: gun3;
+        }
+
+        button {
+            font-size: 1.2em;
+            border-radius: 15px;
+            padding: 0.3em;
+            background-color: transparent;
+            margin: 3% auto;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2E4374;
+            color: white;
+        }
+
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5em;
+        }
+
+        .display p {
+            font-family: 'Raleway', sans-serif;wwww
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label for="logo">Dimshop</label>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/">Categories</a></li>
+            <li><a href="/">Cart</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Account</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main>
+        <div class="display">
+            <div class="thing knife1">
+                <img src="1.jpeg" alt="Knife 1">
+                <h3>Knife 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="thing knife2">
+                <img src="2.jpeg" alt="Knife 2">
+                <h3>Knife 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="thing knife3">
+                <img src="3.jpeg" alt="Knife 3">
+                <h3>Knife 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="thing gun1">
+                <img src="4.jpeg" alt="Gun 1">
+                <h3>Gun 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="thing gun2">
+                <img src="5.jpeg" alt="Gun 2">
+                <h3>Gun 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus?</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="thing gun3">
+                <img src="6.jpeg" alt="Gun 3">
+                <h3>Gun 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, delectus?</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
