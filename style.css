@@ -12,6 +12,8 @@ nav {
     justify-content: space-between;
     background-color: #2E4374F2;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 label {

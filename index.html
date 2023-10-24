@@ -34,39 +34,12 @@
         }
 
         .display {
-            margin: 5.5em auto;
+            margin: 8em auto;
             justify-items: center;
-            align-items: center;
+            align-items: start;
             display: grid;
-            grid-template-areas:
-                "knife1 knife2 knife3"
-                "gun1 gun2 gun3";
             grid-template-columns: 1fr 1fr 1fr;
             row-gap: 2em;
-        }
-
-        .knife1 {
-            grid-area: knife1;
-        }
-
-        .knife2 {
-            grid-area: knife2;
-        }
-
-        .knife3 {
-            grid-area: knife3;
-        }
-
-        .gun1 {
-            grid-area: gun1;
-        }
-
-        .gun2 {
-            grid-area: gun2;
-        }
-
-        .gun3 {
-            grid-area: gun3;
         }
 
         button {
@@ -89,7 +62,57 @@
         }
 
         .display p {
-            font-family: 'Raleway', sans-serif;wwww
+            font-family: 'Raleway', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .display {
+                margin: 5.5em auto;
+                justify-items: center;
+                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 2em;
+            }
+
+            .thing {
+                border: solid 2px #2E4374;
+                width: 70%;
+                text-align: center;
+                padding: 1.01em;
+                line-height: 1.6;
+                border-radius: 25px;
+            }
+        }
+
+        @media (max-width: 426px) {
+            .display {
+                margin: 5.5em auto;
+                justify-items: center;
+                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 2em;
+            }
+
+            .thing {
+                border: solid 2px #2E4374;
+                width: 85%;
+                text-align: center;
+                padding: 1.01em;
+                line-height: 1.6;
+                border-radius: 25px;
+            }
+
+            button {
+                font-size: 1.2em;
+                border-radius: 15px;
+                /* padding: 0.3em; */
+                width: 100%;
+                background-color: transparent;
+                margin: 3% auto;
+                cursor: pointer;
+            }
         }
     </style>
 </head>
